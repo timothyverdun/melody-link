@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyLink | Mes sélections Musicales | Timothy Verdun</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon/iconapp.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<header id="top">
+    <figure>
+        <img src="img/icon/logocomplet_white.svg" alt="logo blanc MelodyLink">
+        <figcaption>Partagez le meilleur de votre playlist</figcaption>
+    </figure>
+</header>
+
+<body>
+    <section class="listeSection">
+        <h1>La sélection musicale de Timothy Verdun</h1>
+        <ul id="listeMusique"></ul>
+    </section>
+    <section class="formSection">
+        <h3>Crée ton post musical !</h3>
+        <p class="soustitre">Utilise le générateur de post en remplissant le formulaire et découvre à quoi ressemblera
+            ton post! <br>
+            Veille à bien remplir les champs du formulaire.</p>
+        <form action="">
+            <div class="formBox">
+                <fieldset class="contenu">
+                    <legend>Contenu</legend>
+                    <label for="title">Titre du Post <span>*</span></Label><br>
+                    <input type="text" id="title" required placeholder="Entrer ici le titre de la musique"><br>
+                    <Label for="description">Description <span>*</span></Label><br>
+                    <textarea name="" id="description" placeholder="Entrer ici la description de cette musique"
+                        required></textarea><br>
+                    <label for="justification">Commentaires <span>*</span></label><br>
+                    <textarea name="" id="justification" placeholder="Pourquoi avez-vous choisi cette musique ?"
+                        required></textarea><br>
+                    <label for="type">Type de son <span>*</span></label><br>
+                    <select name="type" id="type" required>
+                        <option value="">--Choisir une option--</option>
+                        <option value="Musique de film">Musique de film</option>
+                        <option value="Chanson">Chanson</option>
+                        <option value="Album">Album</option>
+                        <option value="Musique de jeu vidéo">Musique de jeu vidéo</option>
+                        <option value="Générique tv">Générique tv</option>
+                        <option value="-">Autre...</option>
+                    </select><br>
+                    <label for="source">Fichier Audio</label><a target="_blank"
+                        href="https://commons.wikimedia.org/wiki/Category:Audio_files_of_music" title="Chercher des liens audio sur Wikimedia (nouvelle fenêtre)">Trouver</a><br>
+                    <input type="link" id="source" placeholder="Entrer le lien de l'audio"> <br>
+                    <label for="bouton">Texte du bouton <span>*</span></label><br>
+                    <input type="text" id="bouton" placeholder="Exemple : Écouter sur Deezer" required><br>
+                    <label for="boutonLink">Lien du bouton <span>*</span></label><br>
+                    <input type="link" id="boutonLink" placeholder="Entrer ici le lien du bouton" required><br>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Design</legend>
+                        <label for="cover">Image de couverture</label><br>
+                        <input type="link" id="cover" placeholder="Entrer le lien de l'image de couverture"><br>
+                        <label for="background">Image d'arrière-plan</label><br>
+                        <input type="link" id="background"
+                            placeholder="Entrer ici le lien de l'image d'arrière-plan"><br>
+                        <label for="position">Position de l'image d'arrière-plan</label><br>
+                        <select name="" id="position">
+                            <option value="center">Centre</option>
+                            <option value="left">Gauche</option>
+                            <option value="right">Droite</option>
+                            <option value="top">Haut</option>
+                            <option value="bottom">Bas</option>
+                        </select><br>
+                        <label for="color">Couleur de fond (Hexadécimal sans le"#")</label><a target="_blank"
+                            href="https://htmlcolorcodes.com/fr/" title="Chercher des couleurs dans un sélecteur (nouvelle fenêtre)">Trouver</a><br>
+                        <input type="text" id="color" placeholder="Exemple : 191237"><br>
+                        <label for="">Couleur du texte</label><br>
+                        <input type="radio" name="text" id="white" value="white">
+                        <label for="white" class="radio clair">Clair</label><br>
+                        <input type="radio" name="text" id="black" value="black">
+                        <label for="black" class="radio sombre">Sombre</label>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Crédits</legend>
+                        <label for="credits">Texte des crédits <span>*</span></label><br>
+                        <input type="text" placeholder="Écrivez ici les mentions légales de la musique" id="credits"
+                            required><br>
+                        <label for="buy">Lien d'Achat <span>*</span></label><br>
+                        <input type="text" placeholder="Entrer ici un lien pour acheter la musique" id="buy" required>
+                    </fieldset>
+                </div>
+                
+            </div><p class="requis">*Requis</p>
+                <button type="submit" class="sendbutton">✓ Valider l'ajout</button>
+        </form>
+
+    </section>
+
+    <a class="newobjButton">🞢 Ajouter une musique</a>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/icon/logocomplet_white.svg" alt="logo blanc MelodyLink">
+            <ul>
+                <li><a href="#top">Retour Haut de page</a></li>
+                <li><a href="" id="citationbutton">Rappel sur le droit de citation musicale</a></li>
+                <li><a href="" id="confidbutton">Politique de confidentialité</a></li>
+                <li><a href="" id="planbutton">Plan du site</a></li>
+            </ul>
+            <p>© 2025 MelodyLink - Timothy Verdun | Tous droits réservés sauf mention contraire | Droit de citation
+                appliqué | Hébergé par : Université Gustave Eiffel </p>
+        </div>
+    </footer>
+
+    <div class="popupbox" id="citationpopup">
+        <div class="popup">
+            <a href="" class="closepopup">X</a>
+            <h2>Rappel sur le droit de citation musicale</h2>
+            <p>L'Article L122-5 du code de la propriété intellectuelle prévoit que :
+                "Lorsque l'oeuvre a été divulguée, l'auteur ne peut interdire :
+                [...]
+                3° Sous réserve que soient indiqués clairement le nom de l'auteur et la source :
+                a) Les analyses et courtes citations justifiées par le caractère critique, polémique, pédagogique,
+                scientifique ou d'information de l'oeuvre à laquelle elles sont incorporées ; [...]"</p>
+        </div>
+    </div>
+    <div class="popupbox" id="confidpopup">
+        <div class="popup">
+            <a href="" class="closepopup">X</a>
+            <h2>Politique de confidentialité et de respect de la vie privée</h2>
+            <p>Ce site collecte uniquement des informations relatives aux musiques ajoutées via le formulaire de suggestion d'ajout de musique.Nous ne collectons pas de données personnelles (nom, email, etc.). <br>
+                <br>
+                Ces données sont stockées sur le serveur de l'université Gustave Eiffel pendant 1 an, puis sont
+                automatiquement supprimées. Ce traitement est effectué conformément à l’Article 5 du RGPD, qui exige que
+                les données soient conservées "pendant une durée n'excédant pas celle nécessaire aux finalités pour
+                lesquelles elles sont collectées". <br>
+                <br>
+                Conformément à l'Article 6 du RGPD, ce traitement repose sur votre consentement implicite, donné lors de
+                la soumission du formulaire. Vous pouvez à tout moment demander l’accès, la rectification, ou la
+                suppression de vos données personnelles, en vertu de vos droits définis par l’Article 17 du RGPD. <br>
+                <br>
+                Si vous avez des questions concernant la gestion de vos données, vous pouvez nous contacter directement
+                via le site de l'université : <a href="https://www.dut-mmi-champs.fr/"
+                    target="_blank" title="(nouvelle fenêtre)">www.dut-mmi-champs.fr/</a>.
+
+            </p>
+        </div>
+    </div>
+    <div class="popupbox" id="planpopup">
+        <div class="popup">
+            <a href="" class="closepopup">X</a>
+            <h2>Plan du site</h2>
+            <p>- En-tête <br>
+            - Liste de selection musicale <br> 
+        - Formulaire de suggestion d'ajout <br>
+    - Pied de Page</p>
+        </div>
+    </div>
+
+    <script src="script_v3.js"></script>
+</body>
+
+</html>
